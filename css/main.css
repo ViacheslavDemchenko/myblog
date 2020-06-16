@@ -3557,7 +3557,7 @@ blockquote::after {
   position: fixed;
   z-index: 1000;
   bottom: 18.75rem;
-  right: 6.25rem;
+  right: 0;
 }
 
 .arrow-up {
@@ -5665,6 +5665,10 @@ blockquote::after {
 
   .about-section .form-content__bottom .social__item {
     margin-bottom: 0;
+  }
+
+  .scroll-up {
+    right: 0.625rem;
   }
 }
 

@@ -178,7 +178,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       menu.classList.add('header-nav--open');
       body.classList.add('no-scroll');
     } else {
-      mobileHide();
+      hamburger.classList.remove('active');
+      menu.classList.remove('header-nav--open');
+      body.classList.remove('no-scroll');
+      categories.forEach(function (category) {
+        category.classList.remove('categories__title--mobile--active');
+      });
+      categoriesList.forEach(function (category) {
+        category.classList.remove('categories-list--mobile--active');
+      });
     }
   }
 
@@ -300,45 +308,90 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 })();
 "use strict";
 
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 ;
 
 (function () {
-  var anchors = document.querySelectorAll('a[href*="#"]');
+  //Передача в переменную всех элементов html на странице
+  var elements = document.documentElement,
+      body = document.body,
+      //Передаем в переменную body
+  links = document.links,
+      //Получаем все якорные ссылки на странице
+  scrollTop; //Функция опредления нажатой ссылки и расчета перемещения
 
-  function smoothScroll() {
-    var _iterator = _createForOfIteratorHelper(anchors),
-        _step;
+  function calcScroll() {
+    //Перебор циклом все ссылок и определение той, на которой был сделан клик
+    for (var i = 0; i < links.length; i++) {
+      links[i].onclick = function (event) {
+        event = event || window.event; //Кросс-браузерность
+        //Определение и округление текущего расстояния от верха документа
 
-    try {
-      var _loop = function _loop() {
-        var anchor = _step.value;
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          var blockID = anchor.getAttribute('href').substr(1);
-          document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        });
+        scrollTop = Math.round(body.scrollTop || elements.scrollTop);
+
+        if (this.hash !== '') {
+          //Предотвращение действия браузера по дефолту при отсутвии атрибута hash у элемента
+          event.preventDefault(); //Получение элемента, к которому ведет якорь нажатой ссылки
+
+          var targetElement = document.getElementById(this.hash.substring(1)),
+              //Задел в 80px, чтобы при прокрутке меню не закрывало заголовок секции
+          targetElementTop = -80; //Вычисление через цикл расстояния от верха до элемента, к которому ведет нажатая ссылка
+
+          while (targetElement.offsetParent) {
+            targetElementTop += targetElement.offsetTop;
+            targetElement = targetElement.offsetParent;
+          } //Получение округленного значения расположения элемента
+
+
+          targetElementTop = Math.round(targetElementTop);
+          /* Функция запуска плавного перемещения (содержит аргументы: текущее растояние от верха
+          документа, расстояние от верха документа к контентному блоку, к которому ведет нажатая 
+          ссылка и сам контентный блок) */
+
+          if (document.body.style.overflow !== 'hidden') {
+            //Предотвращает прокрутку при открытом модальном окне
+            smoothScroll(scrollTop, targetElementTop, this.hash);
+          }
+        }
       };
-
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        _loop();
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
     }
   }
 
-  smoothScroll();
+  ;
+  calcScroll();
+  var timeInterval = 1,
+      //Задаем временной интервал в 1 миллисекунду
+  prevScrollTop,
+      speed; //Функция плавной прокрутки
+
+  function smoothScroll(from, to, hash) {
+    /* Если элемент (конечная точка движения) расположен ниже текущей точки экрана,
+    то scroll ведется с верху вниз (положительное значение), если наоборот, то снизу
+    вверх (отрицательное значение) */
+    if (to > from) {
+      speed = 10;
+    } else {
+      speed = -20;
+    } //Установка интервала движения
+
+
+    var move = setInterval(function () {
+      //Получение и округение текущей позиции экрана
+      scrollTop = Math.round(body.scrollTop || elements.scrollTop); //Условия прекращения или продолжения движения
+
+      if (prevScrollTop === scrollTop || to > from && scrollTop >= to || to < from && scrollTop <= to) {
+        clearInterval(move); //Добавление атрибута hash в url после прокрутки (добавляется к адресной строке в браузере)
+
+        history.replaceState(history.state, document.title, location.href.replace(/#.*$/g, '') + hash);
+      } else {
+        body.scrollTop += speed;
+        elements.scrollTop += speed;
+        /* Передача текущей позиции экрана в переменную, которая при последующих перемещениях
+        будет играть роль места хранения последней позиции экрана */
+
+        prevScrollTop = scrollTop;
+      }
+    }, timeInterval); //Передача ранее установленного интервала перемещения
+  }
 })();
 "use strict";
 
