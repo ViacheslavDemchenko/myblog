@@ -270,19 +270,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     });
   }
 
-  paginationAnimate(); // function paginationAnimate() {
-  //     for (let i = 0; i < paginationToggles.length; i++) {
-  //         paginationToggles[i].addEventListener('click', () => {
-  //             paginationLabels.forEach(el => {
-  //                 el.style.width = '';
-  //             });
-  //             if (i != 0 && i != paginationToggles.length - 1) {
-  //                 paginationLabels[i].style.width = 120 + 'px';
-  //             }
-  //         });
-  //     }
-  // }
-  // paginationAnimate();
+  paginationAnimate();
 })();
 "use strict";
 
