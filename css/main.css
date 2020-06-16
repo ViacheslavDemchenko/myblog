@@ -1473,8 +1473,8 @@ template {
 }
 
 .skills-icons__item {
-  width: 6.25rem;
-  height: 7.5rem;
+  width: 3.125rem;
+  height: 4.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1674,6 +1674,7 @@ template {
   padding-top: 0.9375rem;
   background: #d33a2c;
   transition: left 1s ease-out;
+  top: 6.5625rem;
 }
 
 .header-nav--open {
@@ -4187,6 +4188,11 @@ blockquote::after {
     flex-direction: row;
   }
 
+  .skills-icons__item {
+    width: 4.375rem;
+    height: 5.625rem;
+  }
+
   .header__inner {
     margin-left: -2.5px;
     margin-right: -2.5px;
@@ -5399,6 +5405,11 @@ blockquote::after {
 
   .about-block:not(:last-child) {
     margin-bottom: 1.875rem;
+  }
+
+  .skills-icons__item {
+    width: 6.25rem;
+    height: 7.5rem;
   }
 
   .header__inner {
