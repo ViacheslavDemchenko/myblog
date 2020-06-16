@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Новый проект</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#"><!--[if lte IE 10]>
+    <p class="browser-upgrade">Вы используете устаревшую версию браузера. Пожалуйста </p><a class="browser-upgrade__link" href="http://browsehappy.com/">обновите свой браузер</a><![endif]-->
+  </head>
+</html>
+<body>
+  <div class="container-fluid">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo"><a class="logo__link" href="#!"> <span>Web</span><span>Development</span><span>World</span></a></div>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
+              <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+              <li class="nav__item"><a class="nav__link" href="about.html">О проекте</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--mobile" href="#!">Рубрики</a>
+                <h4 class="categories__title categories__title--mobile">Верстка</h4>
+                <ul class="categories-list categories-list--mobile">
+                  <li class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+                </ul>
+                <h4 class="categories__title categories__title--mobile">Javascript</h4>
+                <ul class="categories-list categories-list--mobile">
+                  <li class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Кодинг</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Работа с API</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Анимация</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form class="search-form" action="#" method="get">
+            <div class="search-form__inner">
+              <input name="search" placeholder="Найдется все..." type="search">
+              <button class="btn search-form__submit" type="submit"></button>
+            </div>
+          </form>
+          <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span>toggle menu</span></button>
+        </div>
+      </div>
+    </header>
+    <section class="main-section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--homepage" href="index.html">&#160; &#8260;
+                <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/icons/sprite.svg#homepage"></use>
+                </svg></a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Портфолио</a></li>
+          </ul>
+        </nav>
+        <h1 class="section__title">Портфолио</h1>
+      </div>
+      <div class="main-wrap">
+        <main class="main section-main">
+          <section class="portfolio-section">
+            <nav class="portfolio-nav">
+              <ul class="portfolio-nav-list">
+                <li class="portfolio-nav__item"><a class="portfolio-nav__link" href="#!">Лендинги</a></li>
+                <li class="portfolio-nav__item"><a class="portfolio-nav__link" href="#!">Многостраничники</a></li>
+                <li class="portfolio-nav__item"><a class="portfolio-nav__link" href="#!">Javascript</a></li>
+                <li class="portfolio-nav__item"><a class="portfolio-nav__link" href="#!">Wordpress</a></li>
+                <li class="portfolio-nav__item"><a class="portfolio-nav__link" href="#!">Интернет-магазины</a></li>
+              </ul>
+            </nav>
+            <ul class="portfolio-list">
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="portfolio__item"><span class="pin-left"></span><span class="pin-right"></span><a class="portfolio__link" href="#!">
+                  <div class="portfolio__img">
+                    <picture><img src="img/portfolio_thumb.jpg" width="330" height="250"></picture>
+                  </div></a>
+                <h3 class="portfolio__item__title"> <a class="portfolio__link" href="#!">Лендинг ресторана Foody Love</a></h3>
+                <ul class="portfolio__item__description"> 
+                  <li class="description__item">Верстка адаптивного лендинга для ресторана Foody Love
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Написание скриптов Javascript
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка формы отправки заявки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Оптимизация кода и изображений
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Настройка микроразметки
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                  <li class="description__item">Создание динамических элементов
+                    <svg class="description__item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <use xlink:href="img/icons/sprite.svg#brackets"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <div class="logo"><a class="logo__link" href="#!"> <span>Web</span><span>Development</span><span>World</span></a></div>
+          </div>
+          <div class="footer__column">
+            <nav class="footer-nav">
+              <ul class="nav-list--left">
+                <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="category.html">статьи</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">гайды</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">кодинг</a></li>
+              </ul>
+              <ul class="nav-list--right">
+                <li class="nav__item"><a class="nav__link" href="#">портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">о проекте</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer-description-title">Web Development World</h4>
+            <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid distinctio laudantium, sunt tenetur expedita harum quos tempore alias voluptates omnis ex obcaecati officia sit ipsam est eveniet ab, accusamus deleniti hic totam. Doloremque quidem repellat, sunt qui suscipit similique! Dolores aut nemo sapiente, consequuntur recusandae et optio ullam magnam?</p>
+          </div>
+          <div class="footer__column">
+            <ul class="post-social-list">
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+            </ul>
+            <div class="informers">
+              <div class="informer-yandex"><img src="img/informer.jpg" width="120" height="40"></div>
+              <div class="informer-liveinternet"><img src="img/informer_2.jpg" width="120" height="40"></div>
+            </div><a class="site-map" href="#!">Карта сайта</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="copyright-top"><span class="copyright">&#169;&nbsp; </span><span class="year">2020&nbsp;</span><span>Все права защищены.</span></div>
+          <div class="copyright-bottom"><span class="copyrigh-text">Копирование материалов разрешено только с указанием активной ссылки (гиперссылки) на сайт&nbsp;
+              <p> <a href="#!">Web Development World</a></p></span></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>

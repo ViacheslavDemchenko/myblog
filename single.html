@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Новый проект</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#"><!--[if lte IE 10]>
+    <p class="browser-upgrade">Вы используете устаревшую версию браузера. Пожалуйста </p><a class="browser-upgrade__link" href="http://browsehappy.com/">обновите свой браузер</a><![endif]-->
+  </head>
+</html>
+<body>
+  <div class="container-fluid">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo"><a class="logo__link" href="#!"> <span>Web</span><span>Development</span><span>World</span></a></div>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
+              <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+              <li class="nav__item"><a class="nav__link" href="about.html">О проекте</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--mobile" href="#!">Рубрики</a>
+                <h4 class="categories__title categories__title--mobile">Верстка</h4>
+                <ul class="categories-list categories-list--mobile">
+                  <li class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+                </ul>
+                <h4 class="categories__title categories__title--mobile">Javascript</h4>
+                <ul class="categories-list categories-list--mobile">
+                  <li class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Кодинг</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Работа с API</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Анимация</a></li>
+                  <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form class="search-form" action="#" method="get">
+            <div class="search-form__inner">
+              <input name="search" placeholder="Найдется все..." type="search">
+              <button class="btn search-form__submit" type="submit"></button>
+            </div>
+          </form>
+          <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span>toggle menu</span></button>
+        </div>
+      </div>
+    </header>
+    <section class="main-section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--homepage" href="index.html">&#160; &#8260;
+                <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/icons/sprite.svg#homepage"></use>
+                </svg></a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="category.html">Статьи &#160; &#8260;</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Что такое функции высшего порядка в javascript</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-wrap">
+        <main class="main main-single">
+          <article class="post"><span class="pin-left"></span><span class="pin-right"></span>
+            <header class="post-header">
+              <h1 class="post__title">Что такое функции высшего порядка в javascript</h1>
+              <div class="content-meta">
+                <div class="left-col">
+                  <div class="meta__item">
+                    <div class="date__icon">
+                      <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <div class="date__value"> 01 мая 2020</div>
+                  </div>
+                  <div class="meta__item">
+                    <div class="view__icon">
+                      <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons/sprite.svg#eye"></use>
+                      </svg>
+                    </div>
+                    <div class="view__value">235</div>
+                  </div>
+                </div>
+                <div class="right-col">
+                  <div class="meta__item">
+                    <div class="comments__icon">
+                      <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons/sprite.svg#comments"></use>
+                      </svg>
+                    </div>
+                    <div class="comments__value">24</div>
+                  </div>
+                  <div class="meta__item">
+                    <div class="timeread__icon">
+                      <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons/sprite.svg#clock"></use>
+                      </svg>
+                    </div>
+                    <div class="timeread__value">~ 15 <span>min</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pretext-block">
+                <p class="pretext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur cumque deleniti repellat molestias debitis deserunt placeat ratione et architecto eligendi! Dicta, commodi? Ad labore debitis vero voluptates eum nulla ut accusantium architecto, quasi tempora harum nostrum illum, facilis quae aliquam iusto neque odit voluptatum soluta veniam, sequi reprehenderit explicabo reiciendis!</p>
+              </div>
+            </header>
+            <div class="post-body">
+              <div class="post-img">
+                <picture><img src="img/single-post.jpg" width="800" height="500" alt=""></picture>
+              </div>
+              <div class="post-content-wrap">
+                <div class="post-content">
+                  <div class="post-content-inner"> 
+                    <h4 class="widget__title widget__title--margin-small">Содержание</h4>
+                    <ul class="content-list">
+                      <li class="content__item"><a class="content__link" href="#">1. Что такое функциональное программирование?</a></li>
+                      <li class="content__item"><a class="content__link" href="#">2. Функции первого класса</a></li>
+                      <li class="content__item"> <a class="content__link" href="#">3. Назначение функций переменным и константам
+                          <ul class="dropdown">
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">3.1 Метод Array.prototype.map</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">3.2 Метод Array.prototype.filter</a></li>
+                          </ul></a></li>
+                      <li class="content__item"><a class="content__link" href="#">4. Решение задачи без использования функций высшего порядка</a></li>
+                      <li class="content__item"><a class="content__link" href="#">5. Решение задачи с помощью функции высшего порядка filter
+                          <ul class="dropdown">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">5.1 Метод Array.prototype.reduce</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">5.2 Решение задачи без использования функций высшего порядка</a></li>
+                          </ul></a></li>
+                      <li class="content__item"><a class="content__link" href="#">6. Создание собственных функций высшего порядка</a></li>
+                      <li class="content__item"><a class="content__link" href="#">7. Решение задачи с помощью функции высшего порядка reduce
+                          <ul class="dropdown">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">7.1 Пример 1</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">7.2 Пример 2</a></li>
+                          </ul></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-meta">
+                  <div class="post-meta__advert-block">
+                    <picture><img src="img/300x250.png" alt="" width="300" height="250"></picture>
+                  </div>
+                  <div class="post-tags">
+                    <h4 class="widget__title widget__title--margin-small">Теги</h4>
+                    <div class="tags-block">           
+                      <ul class="tags-list">
+                        <li class="tag__item"><a class="tag__link" href="#">javascript
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <use xlink:href="img/icons/sprite.svg#tag"></use>
+                            </svg></a></li>
+                        <li class="tag__item"><a class="tag__link" href="#">функции
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <use xlink:href="img/icons/sprite.svg#tag"></use>
+                            </svg></a></li>
+                        <li class="tag__item"><a class="tag__link" href="#">валидация
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <use xlink:href="img/icons/sprite.svg#tag"></use>
+                            </svg></a></li>
+                        <li class="tag__item"><a class="tag__link" href="#">map
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <use xlink:href="img/icons/sprite.svg#tag"></use>
+                            </svg></a></li>
+                        <li class="tag__item"><a class="tag__link" href="#">filter
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <use xlink:href="img/icons/sprite.svg#tag"></use>
+                            </svg></a></li>
+                        <li class="tag__item"><a class="tag__link" href="#">метод
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <use xlink:href="img/icons/sprite.svg#tag"></use>
+                            </svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-text">
+                <p>Если вы занимаетесь изучением JavaScript, то вы, наверняка, сталкивались с понятием «функция высшего порядка» (Higher-Order Function). Может показаться, что это что-то очень сложное, но, на самом деле, это не так.</p>
+                <p>JavaScript подходит для функционального программирования благодаря тому, что он поддерживает концепцию функций высшего порядка. Такие функции широко используются в языке, и если вы программировали на JS, то вы, вероятно, уже с ними работали, даже не зная об этом.</p>
+                <p>Для того, чтобы в полной мере понять эту концепцию, вам сначала надо разобраться с понятием функционального программирования (Functional Programming) и с тем, что такое функции первого класса (First-Class Functions).</p>
+                <p>Материал, перевод которого мы публикуем, предназначен для начинающих, он направлен на объяснение концепции функций высшего порядка, и на демонстрацию того, как пользоваться ими в JavaScript.</p>
+                <h2>Что такое функциональное программирование?</h2>
+                <p>Если описать концепцию функционального программирования простыми словами, то окажется, что это — подход к программированию, при использовании которого функции можно передавать другим функциям в качестве параметров и использовать функции в качестве значений, возвращаемых другими функциями. Занимаясь функциональным программированием, мы проектируем архитектуру приложения и пишем код с использованием функций.</p>
+                <p>Среди языков, поддерживающих функциональное программирование, можно отметить JavaScript, Haskell, Clojure, Scala и Erlang.</p>
+                <h2>Функции первого класса</h2>
+                <p>Если вы изучаете JavaScript, вы могли слышать, что в языке функции рассматриваются как объекты первого класса. Это так из-за того, что в JavaScript, как и в других языках, поддерживающих функциональное программирование, функции являются объектами.</p>
+                <p>В частности, в JS функции представлены в виде объектов особого типа — это объекты типа Function. Рассмотрим пример:</p>
+                <pre><code class="javascript-code"><span class="token keyword">function&nbsp;</span><span class="token function">greeting<span class="token punctuation">() { <br></span></span><span class="token console">&nbsp;&nbsp;&nbsp;console.log<span class="token punctuation">(</span></span><span class="token string">'Hello World'<span class="token punctuation">);<br></span><span class="token punctuation">&nbsp;} <br></span></span><span class="token comment">&nbsp;// Вызов функции<br><span class="token function">&nbsp;&nbsp;greeting<span class="token punctuation">();&nbsp;</span></span></span><span class="token comment">// выводит 'Hello World'</span></code></pre>
+                <p>Обратите внимание на то, что хотя добавление собственных свойств к стандартным объектам в JavaScript не вызывает сообщений об ошибках, делать так не рекомендуется. Не стоит добавлять собственные свойства к функциям. Если вам надо хранить что-то в объекте — лучше создайте для этого специальный объект.</p>
+                <p>В JavaScript с функциями можно делать то же самое, что можно делать с сущностями других типов, таких, как Object, String, Number. Функции можно передавать как параметры другим функциям. Такие функции, переданные другим, обычно выступают в роли функций обратного вызова (коллбэков). Функции можно назначать переменным, хранить их в массивах, и так далее. Именно поэтому функции в JS — это объекты первого класса.</p>
+                <h2>Назначение функций переменным и константам</h2>
+                <p>Функции можно назначать переменным и константамdiv</p>
+                <p>Функции, назначенные переменным или константам, можно назначать другим переменным или константам.</p>
+                <h2>Функции высшего порядка</h2>
+                <p>Функции высшего порядка — это функции, которые работают с другими функциями, либо принимая их в виде параметров, либо возвращая их. Проще говоря, функцией высшего порядка называется такая функция, которая принимает функцию как аргумент или возвращает функцию в виде выходного значения.</p>
+                <blockquote>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima natus ipsa, quod aperiam vel ducimus voluptate corporis quos voluptatibus ut, sunt delectus quia unde harum eveniet tenetur fugit eos molestias cupiditate iusto voluptatum non earum! Totam nam, dolore distinctio voluptate, repellendus obcaecati quae perspiciatis vero et illum tempore dolores velit!</p>
+                </blockquote>
+                <h2>Функции высшего порядка в действии</h2>
+                <pre><code class="javascript-code"><span class="token keyword">function&nbsp;</span><span class="token function">greeting<span class="token punctuation">() { <br></span></span><span class="token console">&nbsp;&nbsp;&nbsp;console.log<span class="token punctuation">(</span></span><span class="token string">'Hello World'<span class="token punctuation">);<br></span><span class="token punctuation">&nbsp;} <br></span></span><span class="token comment">&nbsp;// Вызов функции<br><span class="token function">&nbsp;&nbsp;greeting<span class="token punctuation">();&nbsp;</span></span></span><span class="token comment">// выводит 'Hello World'</span></code></pre>
+                <p>Рассмотрим примеры использования встроенных в JS функций высшего порядка и сравним такой подход с выполнением аналогичных действий без использования таких функций.</p>
+                <h3>Метод Array.prototype.map</h3>
+                <p>Метод map() создаёт новый массив, вызывая, для обработки каждого элемента входного массива, коллбэк, переданный ему в виде аргумента. Этот метод берёт каждое возвращённое коллбэком значение и помещает его в выходной массив.</p>
+                <p>Функция обратного вызова, передаваемая map(), принимает три аргумента: element (элемент), index (индекс) и array (массив). Рассмотрим примеры.</p>
+                <h3>Метод Array.prototype.filter</h3><span>Метод </span><span class="token function">filter</span><span class="token punctuation">() </span><span>создаёт, на основе массива, новый массив, в которой попадают элементы исходного массива, соответствующие условию, заданному в переданной этому методу функции обратного вызова. Эта функция принимает, как и в случае с методом map(), 3 аргумента: element, index и array.</span><span>Рассмотрим пример, построенный по той же схеме, что и при рассмотрении метода map().</span>
+                <pre><code class="javascript-code"><span class="token keyword">function&nbsp;</span><span class="token function">greeting<span class="token punctuation">() { <br></span></span><span class="token console">&nbsp;&nbsp;&nbsp;console.log<span class="token punctuation">(</span></span><span class="token string">'Hello World'<span class="token punctuation">);<br></span><span class="token punctuation">&nbsp;} <br></span></span><span class="token comment">&nbsp;// Вызов функции<br><span class="token function">&nbsp;&nbsp;greeting<span class="token punctuation">();&nbsp;</span></span></span><span class="token comment">// выводит 'Hello World'</span></code></pre>
+                <h3>Метод Array.prototype.reduce</h3>
+                <p>Метод reduce() обрабатывает каждый элемент массива с помощью коллбэка и помещает результат в единственное выходное значение. Этот метод принимает два параметра: коллбэк и необязательное начальное значение (initialValue).</p>
+                <p>Коллбэк принимает четыре параметра: accumulator (аккумулятор), currentValue (текущее значение), currentIndex (текущий индекс), sourceArray (исходный массив).</p>
+                <p>Если методу предоставлен параметр initialValue, то, в начале работы метода, accumulator будет равен этому значению, а в currentValue будет записан первый элемент обрабатываемого массива.</p>
+                <p>Если параметр initialValue методу не предоставлен, то в accumulator будет записан первый элемент массива, а в currentValue — второй.</p>
+                <h2>Итоги</h2>
+                <p>В этом материале мы поговорили о функциях высшего порядка и исследовали некоторые встроенные функции JavaScript. Кроме того, мы разобрались с тем, как создавать собственные функции высшего порядка.</p>
+                <p>Если выразить в двух словах суть функций высшего порядка, то можно сказать, что это функции, которые могут принимать другие функции в качестве аргументов и возвращать другие функции в качестве результатов своей работы. Работа с другими функциями в функциях высшего порядка выглядит так же, как работа с любыми другими объектами.</p>
+              </div>
+            </div>
+            <footer class="post-footer">
+              <div class="footer__advert-block">
+                <picture><img src="img/728x90.png" alt="" width="728" height="90"></picture>
+              </div>
+              <div class="footer-bottom">
+                <div class="post-tags">
+                  <h4 class="post-tags__title">Теги</h4>
+                  <div class="tags-block">           
+                    <ul class="tags-list">
+                      <li class="tag__item"><a class="tag__link" href="#">javascript
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#tag"></use>
+                          </svg></a></li>
+                      <li class="tag__item"><a class="tag__link" href="#">функции
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#tag"></use>
+                          </svg></a></li>
+                      <li class="tag__item"><a class="tag__link" href="#">валидация
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#tag"></use>
+                          </svg></a></li>
+                      <li class="tag__item"><a class="tag__link" href="#">map
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#tag"></use>
+                          </svg></a></li>
+                      <li class="tag__item"><a class="tag__link" href="#">filter
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#tag"></use>
+                          </svg></a></li>
+                      <li class="tag__item"><a class="tag__link" href="#">метод
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#tag"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-social--footer">
+                  <h4 class="post-social__title">Поделись статьей с друзьями</h4>
+                  <ul class="post-social-list">
+                    <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                    <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                    <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                    <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                    <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+            <div class="read-also">
+              <h3 class="read-also__title">Читайте также</h3>
+              <div class="read-also-list">
+                <article class="read-also__article"><span class="pin-left pin-left--small"></span><span class="pin-right pin-right--small"></span>
+                  <div class="read-also__thumbnail">
+                    <picture><a href="single.html"><img src="img/thumbnail-post.jpg" alt="" width="280" height="187"></a></picture>
+                  </div>
+                  <div class="content-meta">
+                    <div class="left-col">
+                      <div class="meta__item">
+                        <div class="date__icon">
+                          <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="date__value"> 01 мая 2020</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="view__icon">
+                          <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#eye"></use>
+                          </svg>
+                        </div>
+                        <div class="view__value">235</div>
+                      </div>
+                    </div>
+                    <div class="right-col">
+                      <div class="meta__item">
+                        <div class="comments__icon">
+                          <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#comments"></use>
+                          </svg>
+                        </div>
+                        <div class="comments__value">24</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="timeread__icon">
+                          <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#clock"></use>
+                          </svg>
+                        </div>
+                        <div class="timeread__value">15 <span>мин.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="read-also__article-title"> <a href="single.html">Что такое функции высшего порядка в javascript</a></h5>
+                </article>
+                <article class="read-also__article"><span class="pin-left pin-left--small"></span><span class="pin-right pin-right--small"></span>
+                  <div class="read-also__thumbnail">
+                    <picture><a href="single.html"><img src="img/thumbnail-post.jpg" alt="" width="280" height="187"></a></picture>
+                  </div>
+                  <div class="content-meta">
+                    <div class="left-col">
+                      <div class="meta__item">
+                        <div class="date__icon">
+                          <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="date__value"> 01 мая 2020</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="view__icon">
+                          <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#eye"></use>
+                          </svg>
+                        </div>
+                        <div class="view__value">235</div>
+                      </div>
+                    </div>
+                    <div class="right-col">
+                      <div class="meta__item">
+                        <div class="comments__icon">
+                          <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#comments"></use>
+                          </svg>
+                        </div>
+                        <div class="comments__value">24</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="timeread__icon">
+                          <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#clock"></use>
+                          </svg>
+                        </div>
+                        <div class="timeread__value">15 <span>мин.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="read-also__article-title"> <a href="single.html">Что такое функции высшего порядка в javascript</a></h5>
+                </article>
+                <article class="read-also__article"><span class="pin-left pin-left--small"></span><span class="pin-right pin-right--small"></span>
+                  <div class="read-also__thumbnail">
+                    <picture><a href="single.html"><img src="img/thumbnail-post.jpg" alt="" width="280" height="187"></a></picture>
+                  </div>
+                  <div class="content-meta">
+                    <div class="left-col">
+                      <div class="meta__item">
+                        <div class="date__icon">
+                          <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="date__value"> 01 мая 2020</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="view__icon">
+                          <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#eye"></use>
+                          </svg>
+                        </div>
+                        <div class="view__value">235</div>
+                      </div>
+                    </div>
+                    <div class="right-col">
+                      <div class="meta__item">
+                        <div class="comments__icon">
+                          <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#comments"></use>
+                          </svg>
+                        </div>
+                        <div class="comments__value">24</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="timeread__icon">
+                          <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#clock"></use>
+                          </svg>
+                        </div>
+                        <div class="timeread__value">15 <span>мин.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="read-also__article-title"> <a href="single.html">Что такое функции высшего порядка в javascript</a></h5>
+                </article>
+                <article class="read-also__article"><span class="pin-left pin-left--small"></span><span class="pin-right pin-right--small"></span>
+                  <div class="read-also__thumbnail">
+                    <picture><a href="single.html"><img src="img/thumbnail-post.jpg" alt="" width="280" height="187"></a></picture>
+                  </div>
+                  <div class="content-meta">
+                    <div class="left-col">
+                      <div class="meta__item">
+                        <div class="date__icon">
+                          <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="date__value"> 01 мая 2020</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="view__icon">
+                          <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#eye"></use>
+                          </svg>
+                        </div>
+                        <div class="view__value">235</div>
+                      </div>
+                    </div>
+                    <div class="right-col">
+                      <div class="meta__item">
+                        <div class="comments__icon">
+                          <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#comments"></use>
+                          </svg>
+                        </div>
+                        <div class="comments__value">24</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="timeread__icon">
+                          <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#clock"></use>
+                          </svg>
+                        </div>
+                        <div class="timeread__value">15 <span>мин.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="read-also__article-title"> <a href="single.html">Что такое функции высшего порядка в javascript</a></h5>
+                </article>
+                <article class="read-also__article"><span class="pin-left pin-left--small"></span><span class="pin-right pin-right--small"></span>
+                  <div class="read-also__thumbnail">
+                    <picture><a href="single.html"><img src="img/thumbnail-post.jpg" alt="" width="280" height="187"></a></picture>
+                  </div>
+                  <div class="content-meta">
+                    <div class="left-col">
+                      <div class="meta__item">
+                        <div class="date__icon">
+                          <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="date__value"> 01 мая 2020</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="view__icon">
+                          <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#eye"></use>
+                          </svg>
+                        </div>
+                        <div class="view__value">235</div>
+                      </div>
+                    </div>
+                    <div class="right-col">
+                      <div class="meta__item">
+                        <div class="comments__icon">
+                          <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#comments"></use>
+                          </svg>
+                        </div>
+                        <div class="comments__value">24</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="timeread__icon">
+                          <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#clock"></use>
+                          </svg>
+                        </div>
+                        <div class="timeread__value">15 <span>мин.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="read-also__article-title"> <a href="single.html">Что такое функции высшего порядка в javascript</a></h5>
+                </article>
+                <article class="read-also__article"><span class="pin-left pin-left--small"></span><span class="pin-right pin-right--small"></span>
+                  <div class="read-also__thumbnail">
+                    <picture><a href="single.html"><img src="img/thumbnail-post.jpg" alt="" width="280" height="187"></a></picture>
+                  </div>
+                  <div class="content-meta">
+                    <div class="left-col">
+                      <div class="meta__item">
+                        <div class="date__icon">
+                          <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="date__value"> 01 мая 2020</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="view__icon">
+                          <svg class="eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#eye"></use>
+                          </svg>
+                        </div>
+                        <div class="view__value">235</div>
+                      </div>
+                    </div>
+                    <div class="right-col">
+                      <div class="meta__item">
+                        <div class="comments__icon">
+                          <svg class="comments" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#comments"></use>
+                          </svg>
+                        </div>
+                        <div class="comments__value">24</div>
+                      </div>
+                      <div class="meta__item">
+                        <div class="timeread__icon">
+                          <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons/sprite.svg#clock"></use>
+                          </svg>
+                        </div>
+                        <div class="timeread__value">15 <span>мин.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="read-also__article-title"> <a href="single.html">Что такое функции высшего порядка в javascript</a></h5>
+                </article>
+              </div>
+            </div>
+            <div class="single-post-comment-area">
+              <h2 class="single-post-comment-area__title">6 комментариев</h2>
+              <ul class="coments-list">
+                <li class="coments-item">
+                  <div class="coments-item-inner">
+                    <div class="coment-author-photo"><img src="img/comment-avatar.jpg" alt=""></div>
+                    <div class="comment-details">
+                      <h3 class="comment-author">Martin Guptil</h3>
+                      <h4 class="comment-date">April 10, 2015</h4>
+                      <p class="comment-text">So lets make the most of this beautiful day. Since we're together. It's time to play the music. It's time to light the lights. It's time to meet the Muppets on the Muppet</p><a class="comment-reply" href="#">Ответить</a>
+                    </div>
+                  </div>
+                  <ul class="coments-reply-list">
+                    <li class="coments-reply-item">
+                      <div class="coments-item-inner">
+                        <div class="coment-author-photo"><img src="img/comment-avatar.jpg" alt=""></div>
+                        <div class="comment-details">
+                          <h3 class="comment-author">Merina pois</h3>
+                          <h4 class="comment-date">April 9, 2015</h4>
+                          <p class="comment-text">Goodbye gray sky hello blue. There's nothing can hold me when I hold you. Feels so right it cant be wrong.</p><a class="comment-reply" href="#">Ответить</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="coments-item">
+                  <div class="coments-item-inner">
+                    <div class="coment-author-photo"><img src="img/comment-avatar.jpg" alt=""></div>
+                    <div class="comment-details">
+                      <h3 class="comment-author">Martin Guptil</h3>
+                      <h4 class="comment-date">April 10, 2015</h4>
+                      <p class="comment-text">So lets make the most of this beautiful day. Since we're together. It's time to play the music. It's time to light the lights. It's time to meet the Muppets on the Muppet</p><a class="comment-reply" href="#">Ответить</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="coments-item">
+                  <div class="coments-item-inner">
+                    <div class="coment-author-photo"><img src="img/comment-avatar.jpg" alt=""></div>
+                    <div class="comment-details">
+                      <h3 class="comment-author">Martin Guptil</h3>
+                      <h4 class="comment-date">April 10, 2015</h4>
+                      <p class="comment-text">So lets make the most of this beautiful day. Since we're together. It's time to play the music. It's time to light the lights. It's time to meet the Muppets on the Muppet</p><a class="comment-reply" href="#">Ответить</a>
+                    </div>
+                  </div>
+                  <ul class="coments-reply-list">
+                    <li class="coments-reply-item">
+                      <div class="coments-item-inner">
+                        <div class="coment-author-photo"><img src="img/comment-avatar.jpg" alt=""></div>
+                        <div class="comment-details">
+                          <h3 class="comment-author">Merina pois</h3>
+                          <h4 class="comment-date">April 9, 2015</h4>
+                          <p class="comment-text">Goodbye gray sky hello blue. There's nothing can hold me when I hold you. Feels so right it cant be wrong.</p><a class="comment-reply" href="#">Ответить</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="coments-reply-item">
+                      <div class="coments-item-inner">
+                        <div class="coment-author-photo"><img src="img/comment-avatar.jpg" alt=""></div>
+                        <div class="comment-details">
+                          <h3 class="comment-author">Merina pois</h3>
+                          <h4 class="comment-date">April 9, 2015</h4>
+                          <p class="comment-text">Goodbye gray sky hello blue. There's nothing can hold me when I hold you. Feels so right it cant be wrong.</p><a class="comment-reply" href="#">Ответить</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="comment-form">
+                <h2 class="comment-form__title">Оставьте комментарий</h2>
+                <form action="single.html">
+                  <div class="form-input-wrap">
+                    <div class="form-input-block">
+                      <input type="text" placeholder="Имя *">
+                    </div>
+                    <div class="form-input-block">
+                      <input type="text" placeholder="E-mail (не публикуется)*">
+                    </div>
+                    <div class="form-textarea-block">
+                      <textarea name="comment-form-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                      <input type="submit" value="Отправить">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </article>
+        </main>
+        <aside class="sidebar">
+          <div class="widget social-widget"><span class="pin-left"></span><span class="pin-right"></span>
+            <h3 class="widget__title">Соцсети</h3>
+            <ul class="social-list">
+              <li class="social__item vk"><a class="social__link vk__link" href="#"></a></li>
+              <li class="social__item instagram"><a class="social__link instagram__link" href="#"></a></li>
+              <li class="social__item whatsapp"><a class="social__link whatsapp__link" href="#"></a></li>
+              <li class="social__item telegram"><a class="social__link telegram__link" href="#"></a></li>
+              <li class="social__item github"><a class="social__link github__link" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="widget categories-widget"><span class="pin-left"></span><span class="pin-right"></span>
+            <h3 class="widget__title">Рубрики</h3>
+            <ul class="categories-list">
+              <h4 class="categories__title">Верстка</h4>
+              <li class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+            </ul>
+            <ul class="categories-list">
+              <h4 class="categories__title">Javascript</h4>
+              <li class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Кодинг</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Работа с API</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Анимация</a></li>
+              <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+            </ul>
+          </div>
+          <div class="widget qoutes-widget"><span class="pin-left"></span><span class="pin-right"></span>
+            <h3 class="widget__title">Минутка юмора</h3>
+            <div class="quotes-block" id="humor-quotes">
+              <p class="quotes-text">Веб-разработчик — человек, превращающий кофеин в программное обеспечение</p>
+            </div>
+          </div>
+          <div class="widget advert-widget"><span class="pin-left"></span><span class="pin-right"></span>
+            <div class="advert-block--sidebar">
+              <picture><img src="img/300x250.png" alt="" width="300" height="250"></picture>
+            </div>
+          </div>
+          <div class="widget vk-widget"><span class="pin-left"></span><span class="pin-right"></span>
+            <h3 class="widget__title">Присоединяйтесь</h3>
+            <div id="vk_groups"><img src="img/widget-vk.jpg" width="308" height="403"></div>
+          </div>
+          <div class="widget subsribe-widget"><span class="pin-left"></span><span class="pin-right"></span>
+            <h3 class="widget__title">Подпишитесь на новости</h3>
+            <form class="subscribe-form" id="subscribe-form" action="#" method="post">
+              <div class="subscribe-form_inner">
+                <input class="subscribe-email" type="text" name="subscribe-email" placeholder="Email...">
+                <input class="btn subscribe-button" type="submit" value="Подписаться">
+              </div>
+            </form>
+          </div>
+          <div class="widget advert-widget--long"><span class="pin-left"></span><span class="pin-right"></span>
+            <div class="advert-block--sidebar">
+              <picture><img src="img/banner.jpg" alt="" width="300" height="600"></picture>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <div class="logo"><a class="logo__link" href="#!"> <span>Web</span><span>Development</span><span>World</span></a></div>
+          </div>
+          <div class="footer__column">
+            <nav class="footer-nav">
+              <ul class="nav-list--left">
+                <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="category.html">статьи</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">гайды</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">кодинг</a></li>
+              </ul>
+              <ul class="nav-list--right">
+                <li class="nav__item"><a class="nav__link" href="#">портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">о проекте</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer-description-title">Web Development World</h4>
+            <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid distinctio laudantium, sunt tenetur expedita harum quos tempore alias voluptates omnis ex obcaecati officia sit ipsam est eveniet ab, accusamus deleniti hic totam. Doloremque quidem repellat, sunt qui suscipit similique! Dolores aut nemo sapiente, consequuntur recusandae et optio ullam magnam?</p>
+          </div>
+          <div class="footer__column">
+            <ul class="post-social-list">
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+            </ul>
+            <div class="informers">
+              <div class="informer-yandex"><img src="img/informer.jpg" width="120" height="40"></div>
+              <div class="informer-liveinternet"><img src="img/informer_2.jpg" width="120" height="40"></div>
+            </div><a class="site-map" href="#!">Карта сайта</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="copyright-top"><span class="copyright">&#169;&nbsp; </span><span class="year">2020&nbsp;</span><span>Все права защищены.</span></div>
+          <div class="copyright-bottom"><span class="copyrigh-text">Копирование материалов разрешено только с указанием активной ссылки (гиперссылки) на сайт&nbsp;
+              <p> <a href="#!">Web Development World</a></p></span></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
