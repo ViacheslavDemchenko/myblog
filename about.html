@@ -211,22 +211,16 @@
               </div>
             </div>
             <div class="about-form-wrap"><span class="pin-left"></span><span class="pin-right"></span>
-              <form class="about-form" action="#" method="post" id="service-form">
-                <input class="user-name" type="text" id="user-name" name="name" placeholder="Имя *">
-                <input class="user-email" type="email" id="user-email" name="email" placeholder="E-mail *">
-                <textarea class="user-message" name="user-message" id="user-message" cols="30" rows="10" placeholder="Сообщение..."></textarea>
-                <div class="file-load-wrap"><span class="file-load-text">Файл не выбран...</span>
-                  <div class="file-load__inner">
-                    <input class="user-file" type="file" id="user-file">
-                    <label class="user-file-label" for="user-file">Загрузить файл</label><span class="file-load-format">Допустимые форматы файлов: .pdf, .doc, .docx, .rtf, .pps, .ppsx (не более 10 Мбайт).</span>
-                  </div>
-                </div>
+              <form class="about-form" method="post" id="about-form">
+                <input class="about-form-field user-name" type="text" id="user-name-about" name="name-about" placeholder="Имя *">
+                <input class="about-form-field user-email" type="email" id="user-email-about" name="email-about" placeholder="E-mail *">
+                <textarea class="about-form-field user-message" name="message-about" id="user-message-about" cols="30" rows="10" placeholder="Сообщение..."></textarea>
                 <div class="about-form__submit-wrap">
-                  <input class="btn about-form__submit" type="submit" value="Отправить" id="service-form__submit">
+                  <input class="btn about-form__submit" type="submit" id="about-form__submit">
                   <p class="file-load-warning">Нажимая на кнопку «Отправить», вы соглашаетесь с <a class="policy" href="#!">условиями использования </a><span class="file-load-warning"> и обработки своих персональных данных.</span></p>
                 </div>
               </form>
-              <div class="about-form-content" id="service-form-content">
+              <div class="about-form-content">
                 <div class="form-content__top">
                   <h2 class="content__top__title">Нужем современный красивый сайт?</h2>
                   <p class="content__top__text">Оставьте заявку, заполнив форму, и я свяжусь с вами в ближайшее время, чтобы обсудить подробности проекта.</p>
@@ -350,6 +344,20 @@
         </div>
       </div>
     </footer>
+    <div class="form-modal-overlay">
+      <div class="form-modal">
+        <div class="close"></div>
+        <div class="envelope">
+          <div class="check-mark">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" stroke="green" stroke-width="3" stroke-dasharray="100">
+              <path class="check-icon-path" d="M 12,22 L 22,31 L 36,13"></path>
+            </svg>
+            <div class="cross"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/main.min.js"></script>
+  <script src="js/form-about.js"></script>
 </body>
