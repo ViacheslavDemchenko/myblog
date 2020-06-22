@@ -1715,11 +1715,11 @@ template {
 .header-nav .nav__link--mobile::after {
   position: absolute;
   content: "";
-  top: calc(50% + 2px);
+  top: 50%;
   right: -100%;
   transform: translateY(calc(-50% + 5px));
-  border: 0.625rem solid transparent;
-  border-top: 0.625rem solid #ffffff;
+  border: 0.4375rem solid transparent;
+  border-top: 0.4375rem solid #ffffff;
 }
 
 .header-nav .nav__link:hover,
@@ -2308,11 +2308,11 @@ pre code {
 .categories__title--mobile::after {
   position: absolute;
   content: "";
-  top: calc(50% + 2px);
+  top: 50%;
   right: -1.9375rem;
   transform: translateY(calc(-50% + 5px));
-  border: 0.625rem solid transparent;
-  border-top: 0.625rem solid #ffffff;
+  border: 0.4375rem solid transparent;
+  border-top: 0.4375rem solid #ffffff;
 }
 
 .categories__title--mobile--active {
