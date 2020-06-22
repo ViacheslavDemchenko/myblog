@@ -17,10 +17,12 @@
     document.addEventListener('keydown', eschideHeaderModal);
     document.addEventListener('click', clickhideHeaderModal);
 
-    function validate(email) {
+    function validate(name, email, message) {
         const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        const address = document.getElementById(email).value;
-        if (reg.test(address) == false) {
+        const addressValue = document.getElementById(email).value;
+        const nameValue = document.getElementById(name).value;
+        const messageValue = document.getElementById(message).value;
+        if (reg.test(addressValue) == false && nameValue != '' && messageValue != '') {
             console.log('Введите корректный e-mail');
             return false;
         } else {
@@ -38,7 +40,7 @@
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        if (validate('user-email-about')) {
+        if (validate('user-name-about', 'user-email-about', 'user-message-about')) {
             let request = new XMLHttpRequest();
             request.open('POST', '../php/form-services.php');
             request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

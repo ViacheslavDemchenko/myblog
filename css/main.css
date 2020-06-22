@@ -1694,7 +1694,7 @@ template {
 
 .header-nav .nav__link {
   display: inline-block;
-  padding: 0.625rem;
+  padding: 0.3125rem;
   transition: all 0.3s ease-out;
 }
 
@@ -2282,8 +2282,8 @@ pre code {
 }
 
 .categories__link {
-  font-size: 0.875rem;
-  line-height: 1rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #ffffff;
 }
 
@@ -2301,6 +2301,8 @@ pre code {
   display: none;
   position: relative;
   text-align: left;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
 .categories__title--mobile::after {
@@ -2484,8 +2486,8 @@ pre code {
   font-family: "Roboto-Black";
   font-weight: 900;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #ffffff;
 }
 
@@ -4992,6 +4994,11 @@ blockquote::after {
     line-height: 1.125rem;
   }
 
+  .header-nav .nav__link {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+
   .logo__link span {
     font-size: 1.25rem;
     line-height: 1.375rem;
@@ -5175,7 +5182,7 @@ blockquote::after {
 
   .service-form-wrap,
   .about-form-wrap {
-    width: 70%;
+    width: 100%;
     flex-direction: row;
     align-items: baseline;
   }
@@ -5656,6 +5663,11 @@ blockquote::after {
     line-height: 1.375rem;
   }
 
+  .header-nav .nav__link {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
   .section-404__title {
     font-size: 9.375rem;
   }
@@ -5820,6 +5832,11 @@ blockquote::after {
 
   .form-textarea-block textarea {
     max-width: 58.9375rem;
+  }
+
+  .service-form-wrap,
+  .about-form-wrap {
+    width: 70%;
   }
 
   .service-form-wrap {
