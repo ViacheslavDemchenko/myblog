@@ -299,7 +299,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 ;
 
 (function () {
-  //Передача в переменную всех элементов html на странице
+  window.addEventListener('scroll', function (e) {
+    var elem = document.querySelector('.scroll-up');
+    var y = scrollY;
+
+    if (y > 1000) {
+      elem.style.display = 'block';
+    } else {
+      elem.style.display = 'none';
+    }
+  }); //Передача в переменную всех элементов html на странице
+
   var elements = document.documentElement,
       body = document.body,
       //Передаем в переменную body
@@ -356,7 +366,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     то scroll ведется с верху вниз (положительное значение), если наоборот, то снизу
     вверх (отрицательное значение) */
     if (to > from) {
-      speed = 10;
+      speed = 20;
     } else {
       speed = -20;
     } //Установка интервала движения

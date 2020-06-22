@@ -3574,11 +3574,12 @@ blockquote::after {
   z-index: 1000;
   bottom: 18.75rem;
   right: 0;
+  display: none;
 }
 
 .arrow-up {
-  width: 4.375rem;
-  height: 3.125rem;
+  width: 3.125rem;
+  height: 1.875rem;
   transform: rotate(0);
   -webkit-animation: arrow-up-animate 2.5s infinite linear;
   animation: arrow-up-animate 2.5s infinite linear;
@@ -5254,6 +5255,11 @@ blockquote::after {
   .sidebar-about .categories-widget,
   .sidebar-about .advert-widget--long {
     width: 100%;
+  }
+
+  .arrow-up {
+    width: 4.375rem;
+    height: 3.125rem;
   }
 
   .categories-list--mobile {
