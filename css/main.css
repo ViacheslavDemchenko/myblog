@@ -1102,14 +1102,11 @@ template {
   margin-right: 15px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .copyright-bottom a {
   transition: all 0.3s ease-out;
-}
-
-.copyrigh-text {
-  text-align: center;
 }
 
 .section-404 {
@@ -2703,6 +2700,19 @@ blockquote::after {
   box-shadow: 0 0.9375rem 0.625rem #777;
 }
 
+.year {
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+
+.main-section__title {
+  display: none;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  opacity: 0;
+}
+
 .pin-left,
 .pin-right {
   position: absolute;
@@ -3483,17 +3493,6 @@ blockquote::after {
   box-shadow: 0 0.3125rem 0.3125rem -0.3125rem rgba(128, 128, 128, 0.15), 0 0.625rem 0.625rem -0.3125rem rgba(128, 128, 128, 0.15), 0 0.9375rem 0.9375rem -0.3125rem rgba(128, 128, 128, 0.15), 0 1.25rem 1.25rem -0.3125rem rgba(128, 128, 128, 0.15);
 }
 
-.file-load-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.file-load__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .service-form-content,
 .about-form-content {
   box-sizing: border-box;
@@ -3828,6 +3827,129 @@ blockquote::after {
   transform: rotate(-45deg);
 }
 
+.policy-block {
+  position: fixed;
+  z-index: 11000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  margin: 1.25rem auto;
+  padding: 0.625rem;
+  overflow: auto;
+  display: none;
+  background: #fff;
+}
+
+.policy-block--active {
+  display: block;
+}
+
+.policy-block__main-title {
+  position: relative;
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  margin-bottom: 0.625rem;
+}
+
+.policy-block__title {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  margin: 1.25rem 0;
+}
+
+.policy-block p {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin: 0.625rem 0;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(128, 128, 128, 0.7);
+}
+
+.overlay--active {
+  display: block;
+}
+
+.close-icon {
+  position: absolute;
+  z-index: 15000;
+  right: -0.3125rem;
+  top: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.close-icon::before,
+.close-icon::after {
+  position: absolute;
+  content: "";
+  right: 0.0625rem;
+  width: 1.6875rem;
+  height: 0.125rem;
+  background-color: #000;
+}
+
+.close-icon::before {
+  transform: rotate(45deg);
+}
+
+.close-icon::after {
+  transform: rotate(-45deg);
+}
+
+.policy-close {
+  position: relative;
+  padding: 0.625rem 1.875rem;
+  margin-top: 0.625rem;
+  left: 50%;
+  transform: translateX(calc(50% - 135px));
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  background-color: blue;
+}
+
+@media (min-width: 48rem) {
+  .policy-block__main-title {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+  }
+
+  .policy-block__title {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
+  .policy-block p {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}
+
 @media (min-width: 50rem) {
   .cmn-toggle-switch span {
     top: 2.3125rem;
@@ -3851,6 +3973,50 @@ blockquote::after {
 @media (min-width: 64rem) {
   .cmn-toggle-switch {
     display: none;
+  }
+
+  .policy-block {
+    padding: 0.9375rem;
+  }
+
+  .close-icon {
+    top: calc(50% - 16px);
+    transform: translateY(calc(50% - 7px));
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .policy-block__main-title {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+
+  .policy-block__title {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 85.3125rem) {
+  .policy-block {
+    padding: 1.25rem;
+  }
+
+  .policy-block__main-title {
+    font-size: 2rem;
+    line-height: 2.125rem;
+  }
+
+  .policy-block__title {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+
+  .policy-block p {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -4556,10 +4722,6 @@ blockquote::after {
 
   .service-form {
     margin-bottom: 1.25rem;
-  }
-
-  .file-load-wrap {
-    margin-top: 1.25rem;
   }
 
   .service-form-content,
@@ -6046,7 +6208,7 @@ blockquote::after {
   }
 
   .header-nav {
-    top: 6.875rem;
+    top: 6.625rem;
   }
 
   .read-also__article-title {

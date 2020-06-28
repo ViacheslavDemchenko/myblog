@@ -22,7 +22,7 @@
         const addressValue = document.getElementById(email).value;
         const nameValue = document.getElementById(name).value;
         const messageValue = document.getElementById(message).value;
-        if (reg.test(addressValue) == false && nameValue != '' && messageValue != '') {
+        if (reg.test(addressValue) == false && nameValue == '' && messageValue == '') {
             console.log('Введите корректный e-mail');
             return false;
         } else {

@@ -12,352 +12,406 @@
     <link rel="icon" href="#" type="image/x-icon">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="apple-touch-icon" href="#"><!--[if lte IE 10]>
-    <p class="browser-upgrade">Вы используете устаревшую версию браузера. Пожалуйста </p><a class="browser-upgrade__link" href="http://browsehappy.com/">обновите свой браузер</a><![endif]-->
+    <p class="browser-upgrade">Вы используете устаревшую версию браузера. Пожалуйста <a class="browser-upgrade__link" href="http://browsehappy.com/">обновите свой браузер</a></p><![endif]-->
   </head>
-</html>
-<body>
-  <div class="container-fluid" id="top">
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="logo"><a class="logo__link" href="#!"> <span>Web</span><span>Development</span><span>World</span></a></div>
-          <nav class="header-nav">
-            <ul class="nav-list">
-              <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
-              <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
-              <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
-              <li class="nav__item"><a class="nav__link" href="about.html">О проекте</a></li>
-              <li class="nav__item"><a class="nav__link nav__link--mobile" href="#!">Рубрики</a>
-                <h4 class="categories__title categories__title--mobile">Верстка</h4>
-                <ul class="categories-list categories-list--mobile">
-                  <li class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
-                </ul>
-                <h4 class="categories__title categories__title--mobile">Javascript</h4>
-                <ul class="categories-list categories-list--mobile">
-                  <li class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Кодинг</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Работа с API</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Анимация</a></li>
-                  <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
-                </ul>
-              </li>
+  <body>
+    <div class="container-fluid" id="top">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="logo"><a class="logo__link" href="index.html"> <span>Web</span><span>Development</span><span>World</span></a></div>
+            <nav class="header-nav">
+              <ul class="nav-list">
+                <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">О проекте</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--mobile" href="#!">Рубрики</a>
+                  <div class="categories__title categories__title--mobile">Верстка</div>
+                  <ul class="categories-list categories-list--mobile">
+                    <li class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+                  </ul>
+                  <div class="categories__title categories__title--mobile">Javascript</div>
+                  <ul class="categories-list categories-list--mobile">
+                    <li class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Кодинг</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Работа с API</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Анимация</a></li>
+                    <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <form class="search-form" action="#" method="get">
+              <div class="search-form__inner">
+                <input name="search" placeholder="Найдется все..." type="search">
+                <button class="btn search-form__submit" type="submit"></button>
+              </div>
+            </form>
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span>toggle menu</span></button>
+          </div>
+        </div>
+      </header>
+      <main class="main-section">
+        <h2 class="main-section__title">Страница обо мне</h2>
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--homepage" href="index.html">&#160; &#8260;
+                  <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="img/icons/sprite.svg#homepage"></use>
+                  </svg></a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">О проекте</a></li>
             </ul>
           </nav>
-          <form class="search-form" action="#" method="get">
-            <div class="search-form__inner">
-              <input name="search" placeholder="Найдется все..." type="search">
-              <button class="btn search-form__submit" type="submit"></button>
-            </div>
-          </form>
-          <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span>toggle menu</span></button>
+          <h1 class="section__title">О проекте</h1>
         </div>
-      </div>
-    </header>
-    <section class="main-section">
-      <div class="container">
-        <nav class="breadcrumbs">
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--homepage" href="index.html">&#160; &#8260;
-                <svg class="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="img/icons/sprite.svg#homepage"></use>
-                </svg></a></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">О проекте</a></li>
-          </ul>
-        </nav>
-        <h1 class="section__title">О проекте</h1>
-      </div>
-      <div class="main-wrap">
-        <div class="scroll-up"><a href="#top">
-            <svg class="arrow-up" width="70" height="50">
-              <use xlink:href="img/icons/sprite.svg#arrow_up"></use>
-            </svg></a></div>
-        <main class="main">
-          <section class="about-section">
-            <div class="development-block"><span class="pin-left"></span><span class="pin-right"></span>
-              <h2 class="development__title">Webdevelopment</h2>
-              <div class="development-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus mollitia at modi consequatur molestiae atque maxime dolores vero minus iusto neque corrupti veritatis natus temporibus quasi quibusdam rerum, iste reiciendis impedit ratione, deserunt explicabo aut quis. Laudantium omnis ea consectetur temporibus accusantium expedita facere, soluta esse molestiae unde quam neque aspernatur, similique exercitationem delectus quasi sequi perferendis nisi. Sapiente aliquid consectetur sequi magnam corrupti vel expedita cumque voluptatibus impedit ducimus quidem nobis neque explicabo consequatur sunt tempora earum architecto eos et consequuntur ea placeat, temporibus repellendus itaque. Necessitatibus ab aperiam earum iste, exercitationem minima. Enim porro earum provident impedit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus dolore suscipit inventore ut iste cumque amet natus modi? Voluptates, quibusdam quaerat. Quibusdam fugit perferendis iusto velit quasi sequi eligendi ad dolores dignissimos eaque. Provident consectetur, impedit architecto magni sint porro aspernatur, quam nulla eaque dolorum saepe, quae accusantium quo repellendus voluptas obcaecati esse eos labore nam placeat ex molestias iste earum. Aperiam quas delectus, dicta natus error quod deleniti eum tenetur similique reiciendis. Ipsum eius repellendus consequatur distinctio et, sed molestiae ullam quia magni perferendis aperiam voluptatibus deserunt libero! Commodi quo nesciunt voluptatem laudantium omnis expedita ducimus eum. Vitae!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus mollitia at modi consequatur molestiae atque maxime dolores vero minus iusto neque corrupti veritatis natus temporibus quasi quibusdam rerum, iste reiciendis impedit ratione, deserunt explicabo aut quis. Laudantium omnis ea consectetur temporibus accusantium expedita facere, soluta esse molestiae unde quam neque aspernatur, similique exercitationem delectus quasi sequi perferendis nisi. Sapiente aliquid consectetur sequi magnam corrupti vel expedita cumque voluptatibus impedit ducimus quidem nobis neque explicabo consequatur sunt tempora earum architecto eos et consequuntur ea placeat, temporibus repellendus itaque. Necessitatibus ab aperiam earum iste, exercitationem minima. Enim porro earum provident impedit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus dolore suscipit inventore ut iste cumque amet natus modi? Voluptates, quibusdam quaerat. Quibusdam fugit perferendis iusto velit quasi sequi eligendi ad dolores dignissimos eaque. Provident consectetur, impedit architecto magni sint porro aspernatur, quam nulla eaque dolorum saepe, quae accusantium quo repellendus voluptas obcaecati esse eos labore nam placeat ex molestias iste earum. Aperiam quas delectus, dicta natus error quod deleniti eum tenetur similique reiciendis. Ipsum eius repellendus consequatur distinctio et, sed molestiae ullam quia magni perferendis aperiam voluptatibus deserunt libero! Commodi quo nesciunt voluptatem laudantium omnis expedita ducimus eum. Vitae!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus mollitia at modi consequatur molestiae atque maxime dolores vero minus iusto neque corrupti veritatis natus temporibus quasi quibusdam rerum, iste reiciendis impedit ratione, deserunt explicabo aut quis. Laudantium omnis ea consectetur temporibus accusantium expedita facere, soluta esse molestiae unde quam neque aspernatur, similique exercitationem delectus quasi sequi perferendis nisi. Sapiente aliquid consectetur sequi magnam corrupti vel expedita cumque voluptatibus impedit ducimus quidem nobis neque explicabo consequatur sunt tempora earum architecto eos et consequuntur ea placeat, temporibus repellendus itaque. Necessitatibus ab aperiam earum iste, exercitationem minima. Enim porro earum provident impedit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus dolore suscipit inventore ut iste cumque amet natus modi? Voluptates, quibusdam quaerat. Quibusdam fugit perferendis iusto velit quasi sequi eligendi ad dolores dignissimos eaque. Provident consectetur, impedit architecto magni sint porro aspernatur, quam nulla eaque dolorum saepe, quae accusantium quo repellendus voluptas obcaecati esse eos labore nam placeat ex molestias iste earum. Aperiam quas delectus, dicta natus error quod deleniti eum tenetur similique reiciendis. Ipsum eius repellendus consequatur distinctio et, sed molestiae ullam quia magni perferendis aperiam voluptatibus deserunt libero! Commodi quo nesciunt voluptatem laudantium omnis expedita ducimus eum. Vitae!</p>
+        <div class="main-wrap">
+          <div class="scroll-up"><a href="#top">
+              <svg class="arrow-up" width="70" height="50">
+                <use xlink:href="img/icons/sprite.svg#arrow_up"></use>
+              </svg></a></div>
+          <div class="main">
+            <div class="about-section">
+              <div class="development-block"><span class="pin-left"></span><span class="pin-right"></span>
+                <div class="development__title">Webdevelopment</div>
+                <div class="development-text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus mollitia at modi consequatur molestiae atque maxime dolores vero minus iusto neque corrupti veritatis natus temporibus quasi quibusdam rerum, iste reiciendis impedit ratione, deserunt explicabo aut quis. Laudantium omnis ea consectetur temporibus accusantium expedita facere, soluta esse molestiae unde quam neque aspernatur, similique exercitationem delectus quasi sequi perferendis nisi. Sapiente aliquid consectetur sequi magnam corrupti vel expedita cumque voluptatibus impedit ducimus quidem nobis neque explicabo consequatur sunt tempora earum architecto eos et consequuntur ea placeat, temporibus repellendus itaque. Necessitatibus ab aperiam earum iste, exercitationem minima. Enim porro earum provident impedit.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus dolore suscipit inventore ut iste cumque amet natus modi? Voluptates, quibusdam quaerat. Quibusdam fugit perferendis iusto velit quasi sequi eligendi ad dolores dignissimos eaque. Provident consectetur, impedit architecto magni sint porro aspernatur, quam nulla eaque dolorum saepe, quae accusantium quo repellendus voluptas obcaecati esse eos labore nam placeat ex molestias iste earum. Aperiam quas delectus, dicta natus error quod deleniti eum tenetur similique reiciendis. Ipsum eius repellendus consequatur distinctio et, sed molestiae ullam quia magni perferendis aperiam voluptatibus deserunt libero! Commodi quo nesciunt voluptatem laudantium omnis expedita ducimus eum. Vitae!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus mollitia at modi consequatur molestiae atque maxime dolores vero minus iusto neque corrupti veritatis natus temporibus quasi quibusdam rerum, iste reiciendis impedit ratione, deserunt explicabo aut quis. Laudantium omnis ea consectetur temporibus accusantium expedita facere, soluta esse molestiae unde quam neque aspernatur, similique exercitationem delectus quasi sequi perferendis nisi. Sapiente aliquid consectetur sequi magnam corrupti vel expedita cumque voluptatibus impedit ducimus quidem nobis neque explicabo consequatur sunt tempora earum architecto eos et consequuntur ea placeat, temporibus repellendus itaque. Necessitatibus ab aperiam earum iste, exercitationem minima. Enim porro earum provident impedit.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus dolore suscipit inventore ut iste cumque amet natus modi? Voluptates, quibusdam quaerat. Quibusdam fugit perferendis iusto velit quasi sequi eligendi ad dolores dignissimos eaque. Provident consectetur, impedit architecto magni sint porro aspernatur, quam nulla eaque dolorum saepe, quae accusantium quo repellendus voluptas obcaecati esse eos labore nam placeat ex molestias iste earum. Aperiam quas delectus, dicta natus error quod deleniti eum tenetur similique reiciendis. Ipsum eius repellendus consequatur distinctio et, sed molestiae ullam quia magni perferendis aperiam voluptatibus deserunt libero! Commodi quo nesciunt voluptatem laudantium omnis expedita ducimus eum. Vitae!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus mollitia at modi consequatur molestiae atque maxime dolores vero minus iusto neque corrupti veritatis natus temporibus quasi quibusdam rerum, iste reiciendis impedit ratione, deserunt explicabo aut quis. Laudantium omnis ea consectetur temporibus accusantium expedita facere, soluta esse molestiae unde quam neque aspernatur, similique exercitationem delectus quasi sequi perferendis nisi. Sapiente aliquid consectetur sequi magnam corrupti vel expedita cumque voluptatibus impedit ducimus quidem nobis neque explicabo consequatur sunt tempora earum architecto eos et consequuntur ea placeat, temporibus repellendus itaque. Necessitatibus ab aperiam earum iste, exercitationem minima. Enim porro earum provident impedit.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus dolore suscipit inventore ut iste cumque amet natus modi? Voluptates, quibusdam quaerat. Quibusdam fugit perferendis iusto velit quasi sequi eligendi ad dolores dignissimos eaque. Provident consectetur, impedit architecto magni sint porro aspernatur, quam nulla eaque dolorum saepe, quae accusantium quo repellendus voluptas obcaecati esse eos labore nam placeat ex molestias iste earum. Aperiam quas delectus, dicta natus error quod deleniti eum tenetur similique reiciendis. Ipsum eius repellendus consequatur distinctio et, sed molestiae ullam quia magni perferendis aperiam voluptatibus deserunt libero! Commodi quo nesciunt voluptatem laudantium omnis expedita ducimus eum. Vitae!</p>
+                </div>
               </div>
-            </div>
-            <div class="about-block"><span class="pin-left"></span><span class="pin-right"></span>
-              <h2 class="skills__title">В своей работе я использую</h2>
-              <ul class="skills-icons-list">
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/html.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/css.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/javascript.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/jquery.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/pug.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/scss.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/npm.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/gulp.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/git.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/github.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/php.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/webp.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/api.svg" width="70" height="90" alt=""></li>
-                <li class="skills-icons__item"><img class="skills__icon" src="img/icons/json.svg" width="70" height="90" alt=""></li>
-              </ul>
-              <div class="skills-content">
-                <ul class="skills-list">
-                  <li class="skills__item skills__item--active">
-                    <h3 class="skills__item__title">1. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">2. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">3. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">4. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">5. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">6. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">7. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">8. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">9. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">10. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>10. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">11. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>11. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">12. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>12. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">13. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>13. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
-                  <li class="skills__item">
-                    <h3 class="skills__item__title">14. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</h3>
-                    <div class="skills-text">
-                      <p>14. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
-                    </div>
-                  </li>
+              <div class="about-block"><span class="pin-left"></span><span class="pin-right"></span>
+                <div class="skills__title">В своей работе я использую</div>
+                <ul class="skills-icons-list">
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/html.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/css.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/javascript.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/jquery.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/pug.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/scss.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/npm.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/gulp.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/git.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/github.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/php.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/webp.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/api.svg" width="70" height="90" alt=""></li>
+                  <li class="skills-icons__item"><img class="skills__icon" src="img/icons/json.svg" width="70" height="90" alt=""></li>
                 </ul>
-              </div>
-            </div>
-            <div class="about-form-wrap"><span class="pin-left"></span><span class="pin-right"></span>
-              <form class="about-form" method="post" id="about-form">
-                <input class="about-form-field user-name" type="text" id="user-name-about" name="name-about" placeholder="Имя *" required>
-                <input class="about-form-field user-email" type="email" id="user-email-about" name="email-about" placeholder="E-mail *" required>
-                <textarea class="about-form-field user-message" name="message-about" id="user-message-about" cols="30" rows="10" placeholder="Сообщение..." required></textarea>
-                <div class="about-form__submit-wrap">
-                  <input class="btn about-form__submit" type="submit" id="about-form__submit">
-                  <p class="file-load-warning">Нажимая на кнопку «Отправить», вы соглашаетесь с <a class="policy" href="#!">условиями использования </a><span class="file-load-warning"> и обработки своих персональных данных.</span></p>
-                </div>
-              </form>
-              <div class="about-form-content">
-                <div class="form-content__top">
-                  <h2 class="content__top__title">Нужем современный красивый сайт?</h2>
-                  <p class="content__top__text">Оставьте заявку, заполнив форму, и я свяжусь с вами в ближайшее время, чтобы обсудить подробности проекта.</p>
-                  <p class="content__top__text">Вы можете прикрепить файл с ТЗ и другими материалами к форме или отправить их на почту.</p>
-                </div>
-                <div class="form-content__bottom"><a class="form-content__email" href="mailto:info@yandex.ru">info@yandex.ru</a>
-                  <ul class="social-list">
-                    <li class="social__item vk"><a class="social__link vk__link" href="#"></a></li>
-                    <li class="social__item instagram"><a class="social__link instagram__link" href="#"></a></li>
-                    <li class="social__item whatsapp"><a class="social__link whatsapp__link" href="#"></a></li>
-                    <li class="social__item telegram"><a class="social__link telegram__link" href="#"></a></li>
-                    <li class="social__item github"><a class="social__link github__link" href="#"></a></li>
+                <div class="skills-content">
+                  <ul class="skills-list">
+                    <li class="skills__item skills__item--active">
+                      <div class="skills__item__title">1. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">2. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">3. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">4. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">5. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">6. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">7. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">8. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">9. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">10. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>10. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">11. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>11. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">12. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>12. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">13. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>13. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item__title">14. HTML (HyperText Markup Language — «язык гипертекстовой разметки)</div>
+                      <div class="skills-text">
+                        <p>14. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum blanditiis impedit, corrupti quas adipisci nisi harum voluptatum voluptates doloremque dolorem culpa labore explicabo beatae enim tempore animi sed nam doloribus. Sapiente obcaecati in consectetur aliquam harum temporibus explicabo. Labore totam officia ipsa animi officiis quidem suscipit hic, nihil rerum modi eius provident mollitia similique recusandae magni, voluptatibus sapiente fuga sint quibusdam. Illo laborum quos perspiciatis repellat similique! Et perferendis eum, praesentium labore enim excepturi fugiat quia voluptatibus dignissimos! Est itaque deserunt, nisi quia natus expedita blanditiis. Non quia ex voluptatem necessitatibus laboriosam ipsam aspernatur, sit assumenda pariatur fuga earum!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, repudiandae praesentium at cum sapiente non perspiciatis nobis maiores quidem inventore recusandae temporibus unde. Eos mollitia excepturi atque perspiciatis exercitationem et porro! Nostrum tenetur eius voluptatibus molestias, debitis distinctio odio, est eligendi sequi optio aliquid ex aperiam, necessitatibus delectus! Ipsa illum molestiae a sunt fuga itaque. Ullam atque fugiat eos voluptate nam esse? Optio sequi impedit dolore sint, fugit quasi deserunt, dolores ut aperiam ullam saepe unde qui illum odit reprehenderit sed. Numquam et dignissimos molestias autem aperiam, cupiditate ipsa saepe fuga id nisi sint maiores explicabo minus ratione facilis?</p>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
-            </div>
-          </section>
-        </main>
-        <aside class="sidebar sidebar-about">
-          <div class="widget about-widget"><span class="pin-left"></span><span class="pin-right"></span>
-            <div class="about-img">
-              <picture><img src="img/demchenko_viacheslav.jpg" widget="200" height="200" alt=""></picture>
-            </div>
-            <div class="about-text"> 
-              <p class="about-text__item">Здравствуйте! Меня зовут Демченко Вячеслав. Я являюсь фронтенд разработчиком c опытом работы более 2 лет и это — мой персональный блог!</p>
-              <p class="about-text__item">Здесь вы сможете узнать обо мне, посмотреть работы в моем портфолио, заказать создание сайта «под ключ» и другие услуги, прочитать большое количество полезных статей по верстке и программированию на javascript.</p>
-              <p class="about-text__item">В разделе «Кодинг» вы найдете подробные материалы о написании полезных скриптов на чистом javascript, а также с использованием различных библиотек. </p>
-              <p class="about-text__item">Блог регулярно пополняется новыми публикациями и в дальнейшем количество рубрик будет постоянно увеличиваться.</p>
-              <p class="about-text__item">Ресурс рассчитан как на тех, кто уже владеет определенной базой, так и на новичков, которые только делают первые шаги в интересном и увлекательном мире веб-разработки.</p>
-            </div>
-          </div>
-          <div class="widget social-widget"><span class="pin-left"></span><span class="pin-right"></span>
-            <h3 class="widget__title">Соцсети</h3>
-            <ul class="social-list">
-              <li class="social__item vk"><a class="social__link vk__link" href="#"></a></li>
-              <li class="social__item instagram"><a class="social__link instagram__link" href="#"></a></li>
-              <li class="social__item whatsapp"><a class="social__link whatsapp__link" href="#"></a></li>
-              <li class="social__item telegram"><a class="social__link telegram__link" href="#"></a></li>
-              <li class="social__item github"><a class="social__link github__link" href="#"></a></li>
-            </ul>
-          </div>
-          <div class="widget categories-widget"><span class="pin-left"></span><span class="pin-right"></span>
-            <h3 class="widget__title">Рубрики</h3>
-            <ul class="categories-list">
-              <h4 class="categories__title">Верстка</h4>
-              <li class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
-            </ul>
-            <ul class="categories-list">
-              <h4 class="categories__title">Javascript</h4>
-              <li class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Кодинг</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Работа с API</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Анимация</a></li>
-              <li class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></li>
-            </ul>
-          </div>
-          <div class="widget vk-widget"><span class="pin-left"></span><span class="pin-right"></span>
-            <h3 class="widget__title">Присоединяйтесь</h3>
-            <div id="vk_groups"><img src="img/widget-vk.jpg" width="308" height="403"></div>
-          </div>
-          <div class="widget subsribe-widget"><span class="pin-left"></span><span class="pin-right"></span>
-            <h3 class="widget__title">Подпишитесь на новости</h3>
-            <form class="subscribe-form" id="subscribe-form" action="#" method="post">
-              <div class="subscribe-form_inner">
-                <input class="subscribe-email" type="text" name="subscribe-email" placeholder="Email...">
-                <input class="btn subscribe-button" type="submit" value="Подписаться">
+              <div class="about-form-wrap"><span class="pin-left"></span><span class="pin-right"></span>
+                <form class="about-form" method="post" id="about-form">
+                  <input class="about-form-field user-name" type="text" id="user-name-about" name="name-about" placeholder="Имя *" required>
+                  <input class="about-form-field user-email" type="email" id="user-email-about" name="email-about" placeholder="E-mail *" required>
+                  <textarea class="about-form-field user-message" name="message-about" id="user-message-about" cols="30" rows="10" placeholder="Сообщение..." required></textarea>
+                  <div class="about-form__submit-wrap">
+                    <input class="btn about-form__submit" type="submit" id="about-form__submit">
+                    <p class="file-load-warning">Нажимая на кнопку «Отправить», вы соглашаетесь с <a class="policy">условиями использования </a><span class="file-load-warning"> и обработки своих персональных данных.</span></p>
+                  </div>
+                </form>
+                <div class="about-form-content">
+                  <div class="form-content__top">
+                    <div class="content__top__title">Нужем современный красивый сайт?</div>
+                    <p class="content__top__text">Оставьте заявку, заполнив форму, и я свяжусь с вами в ближайшее время, чтобы обсудить подробности проекта.</p>
+                    <p class="content__top__text">Вы можете прикрепить файл с ТЗ и другими материалами к форме или отправить их на почту.</p>
+                  </div>
+                  <div class="form-content__bottom"><a class="form-content__email" href="mailto:info@yandex.ru">info@yandex.ru</a>
+                    <ul class="social-list">
+                      <li class="social__item vk"><a class="social__link vk__link" href="#"></a></li>
+                      <li class="social__item instagram"><a class="social__link instagram__link" href="#"></a></li>
+                      <li class="social__item whatsapp"><a class="social__link whatsapp__link" href="#"></a></li>
+                      <li class="social__item telegram"><a class="social__link telegram__link" href="#"></a></li>
+                      <li class="social__item github"><a class="social__link github__link" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </form>
+            </div>
           </div>
-        </aside>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__column">
-            <div class="logo"><a class="logo__link" href="#!"> <span>Web</span><span>Development</span><span>World</span></a></div>
-          </div>
-          <div class="footer__column">
-            <nav class="footer-nav">
-              <ul class="nav-list--left">
-                <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
-                <li class="nav__item"><a class="nav__link" href="category.html">статьи</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">гайды</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">кодинг</a></li>
+          <aside class="sidebar sidebar-about">
+            <div class="widget about-widget"><span class="pin-left"></span><span class="pin-right"></span>
+              <div class="about-img">
+                <picture><img src="img/demchenko_viacheslav.jpg" width="200" height="200" alt=""></picture>
+              </div>
+              <div class="about-text"> 
+                <p class="about-text__item">Здравствуйте! Меня зовут Демченко Вячеслав. Я являюсь фронтенд разработчиком c опытом работы более 2 лет и это — мой персональный блог!</p>
+                <p class="about-text__item">Здесь вы сможете узнать обо мне, посмотреть работы в моем портфолио, заказать создание сайта «под ключ» и другие услуги, прочитать большое количество полезных статей по верстке и программированию на javascript.</p>
+                <p class="about-text__item">В разделе «Кодинг» вы найдете подробные материалы о написании полезных скриптов на чистом javascript, а также с использованием различных библиотек. </p>
+                <p class="about-text__item">Блог регулярно пополняется новыми публикациями и в дальнейшем количество рубрик будет постоянно увеличиваться.</p>
+                <p class="about-text__item">Ресурс рассчитан как на тех, кто уже владеет определенной базой, так и на новичков, которые только делают первые шаги в интересном и увлекательном мире веб-разработки.</p>
+              </div>
+            </div>
+            <div class="widget social-widget"><span class="pin-left"></span><span class="pin-right"></span>
+              <div class="widget__title">Соцсети</div>
+              <ul class="social-list">
+                <li class="social__item vk"><a class="social__link vk__link" href="#"></a></li>
+                <li class="social__item instagram"><a class="social__link instagram__link" href="#"></a></li>
+                <li class="social__item whatsapp"><a class="social__link whatsapp__link" href="#"></a></li>
+                <li class="social__item telegram"><a class="social__link telegram__link" href="#"></a></li>
+                <li class="social__item github"><a class="social__link github__link" href="#"></a></li>
               </ul>
-              <ul class="nav-list--right">
-                <li class="nav__item"><a class="nav__link" href="#">портфолио</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">услуги</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">о проекте</a></li>
+            </div>
+            <div class="widget categories-widget"><span class="pin-left"></span><span class="pin-right"></span>
+              <div class="widget__title">Рубрики</div>
+              <div class="categories-list">
+                <div class="categories__title">Верстка</div>
+                <div class="categories__item"><a class="categories__link" href="#!">HTML5 и CSS3</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Статьи по верстке</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Адаптивная верстка</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">CSS анимация</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></div>
+              </div>
+              <div class="categories-list">
+                <div class="categories__title">Javascript</div>
+                <div class="categories__item"><a class="categories__link" href="#!">Vanilla JavaScript</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Кодинг</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Работа с API</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Javascript vs jQuery</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Анимация</a></div>
+                <div class="categories__item"><a class="categories__link" href="#!">Проблемы Internet Explorer</a></div>
+              </div>
+            </div>
+            <div class="widget vk-widget"><span class="pin-left"></span><span class="pin-right"></span>
+              <div class="widget__title">Присоединяйтесь</div>
+              <div id="vk_groups"><img src="img/widget-vk.jpg" width="308" height="403" alt=""></div>
+            </div>
+            <div class="widget subsribe-widget"><span class="pin-left"></span><span class="pin-right"></span>
+              <div class="widget__title">Подпишитесь на новости</div>
+              <form class="subscribe-form" id="subscribe-form" action="#" method="post">
+                <div class="subscribe-form_inner">
+                  <input class="subscribe-email" type="text" name="subscribe-email" placeholder="Email...">
+                  <input class="btn subscribe-button" type="submit" value="Подписаться">
+                </div>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__column">
+              <div class="logo"><a class="logo__link" href="index.html"> <span>Web</span><span>Development</span><span>World</span></a></div>
+            </div>
+            <div class="footer__column">
+              <nav class="footer-nav">
+                <ul class="nav-list--left">
+                  <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
+                  <li class="nav__item"><a class="nav__link" href="category.html">статьи</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">гайды</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">кодинг</a></li>
+                </ul>
+                <ul class="nav-list--right">
+                  <li class="nav__item"><a class="nav__link" href="#">портфолио</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">услуги</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">о проекте</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer-description-title">Web Development World</div>
+              <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid distinctio laudantium, sunt tenetur expedita harum quos tempore alias voluptates omnis ex obcaecati officia sit ipsam est eveniet ab, accusamus deleniti hic totam. Doloremque quidem repellat, sunt qui suscipit similique! Dolores aut nemo sapiente, consequuntur recusandae et optio ullam magnam?</p>
+            </div>
+            <div class="footer__column">
+              <ul class="post-social-list">
+                <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
+                <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
               </ul>
-            </nav>
+              <div class="informers">
+                <div class="informer-yandex"><img src="img/informer.jpg" width="120" height="40" alt=""></div>
+                <div class="informer-liveinternet"><img src="img/informer_2.jpg" width="120" height="40" alt=""></div>
+              </div><a class="site-map" href="#!">Карта сайта</a>
+            </div>
           </div>
-          <div class="footer__column">
-            <h4 class="footer-description-title">Web Development World</h4>
-            <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid distinctio laudantium, sunt tenetur expedita harum quos tempore alias voluptates omnis ex obcaecati officia sit ipsam est eveniet ab, accusamus deleniti hic totam. Doloremque quidem repellat, sunt qui suscipit similique! Dolores aut nemo sapiente, consequuntur recusandae et optio ullam magnam?</p>
-          </div>
-          <div class="footer__column">
-            <ul class="post-social-list">
-              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
-              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
-              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
-              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
-              <li class="post-social__item"><a class="post-social__link" href="#"></a></li>
-            </ul>
-            <div class="informers">
-              <div class="informer-yandex"><img src="img/informer.jpg" width="120" height="40"></div>
-              <div class="informer-liveinternet"><img src="img/informer_2.jpg" width="120" height="40"></div>
-            </div><a class="site-map" href="#!">Карта сайта</a>
+          <div class="footer__bottom">
+            <div class="copyright-top">
+              <div class="year"></div>
+            </div>
+            <div class="copyright-bottom"><span class="copyrigh-text">Копирование материалов разрешено только с указанием активной ссылки (гиперссылки) на сайт&nbsp;<a href="#!">Web Development World</a></span></div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="copyright-top"><span class="copyright">&#169;&nbsp; </span><span class="year">2020&nbsp;</span><span>Все права защищены.</span></div>
-          <div class="copyright-bottom"><span class="copyrigh-text">Копирование материалов разрешено только с указанием активной ссылки (гиперссылки) на сайт&nbsp;
-              <p> <a href="#!">Web Development World</a></p></span></div>
+      </footer>
+      <div class="form-modal-overlay">
+        <div class="form-modal">
+          <div class="close"></div>
+          <div class="envelope">
+            <div class="check-mark">
+              <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" stroke="green" stroke-width="3" stroke-dasharray="100">
+                <path class="check-icon-path" d="M 12,22 L 22,31 L 36,13"></path>
+              </svg>
+              <div class="cross"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <div class="form-modal-overlay">
-      <div class="form-modal">
-        <div class="close"></div>
-        <div class="envelope">
-          <div class="check-mark">
-            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" stroke="green" stroke-width="3" stroke-dasharray="100">
-              <path class="check-icon-path" d="M 12,22 L 22,31 L 36,13"></path>
-            </svg>
-            <div class="cross"></div>
+      <div class="overlay">
+        <div class="policy-block">
+          <div class="policy-block__main-title">Политика в отношении обработки персональных данных
+            <div class="close-icon"></div>
           </div>
+          <div class="policy-block__title">1. Общие положения</div>
+          <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Демченко Вячеславом Вячеславовичем (далее – Оператор).</p>
+          <p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+          <p>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://webdevelopmentworld.su.</p>
+          <div class="policy-block__title">2. Основные понятия, используемые в Политике</div>
+          <p>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</p>
+          <p>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</p>
+          <p>2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://webdevelopmentworld.su;</p>
+          <p>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</p>
+          <p>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</p>
+          <p>2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
+          <p>2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</p>
+          <p>2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта https://webdevelopmentworld.su;</p>
+          <p>2.9. Пользователь – любой посетитель веб-сайта https://webdevelopmentworld.su;</p>
+          <p>2.10. Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</p>
+          <p>2.11. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</p>
+          <p>2.12. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</p>
+          <p>2.13. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) уничтожаются материальные носители персональных данных.</p>
+          <div class="policy-block__title">3. Оператор может обрабатывать следующие персональные данные Пользователя</div>
+          <p>3.1. Фамилия, имя, отчество;</p>
+          <p>3.2. Электронный адрес;</p>
+          <p>3.4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</p>
+          <p>3.5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</p>
+          <div class="policy-block__title">4. Цели обработки персональных данных</div>
+          <p>4.1. Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем.</p>
+          <p>4.2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты webdevworld@yandex.ru  с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».</p>
+          <p>4.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</p>
+          <div class="policy-block__title">5. Правовые основания обработки персональных данных</div>
+          <p>5.1. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте https://webdevelopmentworld.su. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</p>
+          <p>5.2. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</p>
+          <div class="policy-block__title">6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</div>
+          <p>Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+          <p>6.1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</p>
+          <p>6.2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</p>
+          <p>6.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора webdevworld@yandex.ru с пометкой «Актуализация персональных данных».</p>
+          <p>6.4. Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора webdevworld@yandex.ru с пометкой «Отзыв согласия на обработку персональных данных».</p>
+          <div class="policy-block__title">7. Трансграничная передача персональных данных</div>
+          <p>7.1. Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</p>
+          <p>7.2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</p>
+          <div class="policy-block__title">8. Заключительные положения</div>
+          <p>8.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты webdevworld@yandex.ru.</p>
+          <p>8.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</p>
+          <p>8.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://webdevelopmentworld.su.</p>
+          <button class="policy-close">Закрыть</button>
         </div>
       </div>
     </div>
-  </div>
-  <script src="js/main.min.js"></script>
-  <script src="js/form-about.js"></script>
-</body>
+    <script src="js/main.min.js"></script>
+    <script src="js/form-about.js"></script>
+    <script src="js/policy.js"></script>
+  </body>
+</html>

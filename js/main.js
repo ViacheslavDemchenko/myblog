@@ -161,6 +161,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 ;
 
 (function () {
+  function getYear() {
+    var date = new Date(),
+        currentYear = date.getFullYear() + 1,
+        yearWrite = document.querySelector('.year');
+
+    if (currentYear > 2020) {
+      yearWrite.innerHTML = "\xA9 2020 \u2014 ".concat(currentYear, " \u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B");
+    } else {
+      yearWrite.innerHTML = "\xA9 ".concat(currentYear, " \u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B");
+    }
+  }
+
+  ;
+  getYear();
+})();
+"use strict";
+
+;
+
+(function () {
   var hamburger = document.getElementById('menu__button');
   var menu = document.querySelector('.header-nav');
   var body = document.getElementsByTagName('body')[0];
